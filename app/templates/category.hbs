@@ -1,12 +1,12 @@
 <h1>Craigslist Clone Listings </h1>
 
 Find items for sale, search for what you need or list items for sale.
+<br>
 
-{{#link-to 'listing'}}{{/link-to}}
 <ul>
   {{#each model.listings as |listing|}}
-  {{individual-listing listing=listing}}
+  {{#link-to 'listing' listing.id}}{{individual-listing listing=listing}}{{/link-to}}
   {{/each}}
 </ul>
-
+<br>
 {{new-listing saveListing="saveListing" category=model}}

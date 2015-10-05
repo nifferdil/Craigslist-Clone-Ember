@@ -1,3 +1,12 @@
 body {
   padding: 20px;
 }
+
+img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid gray;
+  display: inline-block;
+  object-fit: cover;
+  overflow: hidden;
+}
