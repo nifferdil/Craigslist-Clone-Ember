@@ -1,7 +1,6 @@
-# Craigslist-clone
+# Craigslist-Clone, Epicodus Week 9 Projecct
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+View categories on the main page and see all of the listings for for a category when selected. Admins are able to add, edit and delete a new listing in a category.
 
 ## Prerequisites
 
@@ -50,4 +49,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
