@@ -7,14 +7,15 @@ export default Ember.Component.extend({
       this.set('addNewListing', true);
     },
 
-    saveListing() {
+    saveListing(category) {
       var params = {
         title: this.get('title'),
         price: this.get('price'),
         description: this.get('description'),
-        image: this.get('image')
+        image: this.get('image'),
+        category: category
       };
-      this.set(addNewListing, false),
+      this.set('addNewListing', false),
       this.sendAction('saveListing', params);
     }
   }
