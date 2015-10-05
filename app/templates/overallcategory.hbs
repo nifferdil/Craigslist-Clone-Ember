@@ -1,0 +1,9 @@
+<h1>Craigslist Clone </h1>
+
+Choose a category to find items listed for sale.
+<br>
+<ul>
+  {{#each model as |category|}}
+    {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+  {{/each}}
+</ul>

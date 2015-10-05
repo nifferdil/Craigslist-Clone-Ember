@@ -1,10 +1,10 @@
 <h1> Welcome to Craigslist Clone </h1>
 
 Find items for sale, search for what you need or list items for sale.
-
-
+<br>
+<br>
 <ul>
-  {{#each model as |category|}}
-  <li>{{category.name}}</li>
+  {{#each model as |overallcategory|}}
+    {{#link-to 'overallcategory' overallcategory.id}}{{overallcategory.name}}{{/link-to}}
   {{/each}}
 </ul>
