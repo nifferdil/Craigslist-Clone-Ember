@@ -19,3 +19,8 @@ img {
   width: 40%;
   margin: 0, auto;
 }
+
+.map-display {
+    height: 400px;
+    width: 400px;
+  }

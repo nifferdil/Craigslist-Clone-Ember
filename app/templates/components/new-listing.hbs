@@ -2,30 +2,40 @@
 
 <h1>New Listing</h1>
 <div>
- <form>
-   <div class="form-group">
-     <label for="title">Title</label>
-     {{input value=title id="title"}}
-   </div>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input value=title id="title"}}
+    </div>
 
-   <div class="form-group">
-     <label for="price">Price $</label>
-     {{input value=price id="price"}}
-   </div>
+    <div class="form-group">
+      <label for="price">Price $</label>
+      {{input value=price id="price"}}
+    </div>
 
-   <div class="form-group">
-     <label for="description">Description</label>
-     {{input value=description id="description"}}
-   </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{input value=description id="description"}}
+    </div>
 
-   <div class="form-group">
-     <label for="image">Image URL</label>
-     {{input value=image id="image"}}
-   </div>
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=image id="image"}}
+    </div>
 
-   <button {{action 'saveListing' category}}>Save</button>
- </form>
+    <div class="form-group">
+      <label for="latitude">Latitude</label>
+      {{input value=latitude id="latitude"}}
+    </div>
+
+    <div class="form-group">
+      <label for="longitude">Longitude</label>
+      {{input value=longitude id="longitude"}}
+    </div>
+
+    <button {{action 'saveListing' category}}>Save</button>
+  </form>
 </div>
- {{else}}
-    <button {{action 'listingFormShow'}}>New Listing</button>
+{{else}}
+<button {{action 'listingFormShow'}}>New Listing</button>
 {{/if}}

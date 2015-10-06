@@ -20,6 +20,8 @@ export default Ember.Component.extend({
         description: this.get('description') ? this.get('description') : "",
         image: this.get('image') ? this.get('image') : "",
         category: category,
+        latitude: this.get('latitude'),
+        longitude: this.get('longitude'),
         date_added: Date.now()
       };
       this.set('addNewListing', false),
