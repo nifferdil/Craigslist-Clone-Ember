@@ -19,7 +19,8 @@ export default Ember.Component.extend({
         price: this.get('price'),
         description: this.get('description') ? this.get('description') : "",
         image: this.get('image') ? this.get('image') : "",
-        category: category
+        category: category,
+        date_added: Date.now()
       };
       this.set('addNewListing', false),
       this.sendAction('saveListing', params);
