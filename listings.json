@@ -1,9 +1,18 @@
-{
-  "overallcategories": [{
+{ "overallcategories": [{
   "name": "For Sale"
+  }, {
+  "name": "Housing"
+  }, {
+  "name": "Jobs"
+  }, {
+  "name": "Personals"
   }],
 
   "categories": [{
-    "name": "Bikes"
-    }]
+  "name": "Bikes"
+  }, {
+  "name": "Furniture"
+  }, {
+  "name": "Appliances"
+  }]
 }
