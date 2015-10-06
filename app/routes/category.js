@@ -13,6 +13,15 @@ export default Ember.Route.extend({
       newListing.save().then(function() {
         category.save();
       });
-    }
+    },
+
+    destroyListing(listing) {
+      listing.destroyRecord().then(function() {
+        category.save();
+      });
+      this.transitionTo('index');
+    },
+
+  
   }
 });
