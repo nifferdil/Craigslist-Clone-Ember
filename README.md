@@ -1,4 +1,4 @@
-# Craigslist-Clone, Epicodus Week 9 Projecct
+# Craigslist-Clone, Epicodus Week 9 Project
 
 View categories on the main page and see all of the listings for for a category when selected. Admins are able to add, edit and delete a new listing in a category.
 

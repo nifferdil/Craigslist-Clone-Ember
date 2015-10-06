@@ -5,7 +5,7 @@ Find items for sale, search for what you need or list items for sale.
 
 <ul>
   {{#each model.listings as |listing|}}
-  {{#link-to 'listing' listing.id}}{{individual-listing listing=listing}}{{/link-to}}
+  {{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}}<br>
   {{/each}}
 </ul>
 <br>
